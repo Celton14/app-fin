@@ -1,50 +1,59 @@
-# Welcome to your Expo app 👋
+# App Fin: Gestão Financeira
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## 💡 Sobre o Projeto
 
-## Get started
+Este é um aplicativo de gestão financeira pessoal, desenvolvido com o objetivo de oferecer uma ferramenta completa e acessível para o controle orçamentário e organização da vida financeira dos usuários no Brasil.
 
-1. Install dependencies
+A proposta é criar uma plataforma que integre as melhores práticas e funcionalidades observadas nos principais concorrentes do mercado, proporcionando uma experiência de usuário superior, intuitiva e acessível de qualquer lugar.
 
-   ```bash
-   npm install
-   ```
+## 🎯 Justificativa
 
-2. Start the app
+A crescente necessidade de uma maior integração socioeconômica e a busca por uma vida financeira mais organizada são os pilares deste projeto. Acreditamos que, através da tecnologia, podemos fornecer conhecimento e ferramentas que possibilitem a liberdade financeira e uma melhor gestão de recursos.
 
-   ```bash
-   npx expo start
-   ```
+Nosso objetivo é fomentar uma sociedade mais consciente financeiramente, oferecendo uma solução que otimiza a gestão de finanças pessoais, resultando em maior eficiência e satisfação para o usuário.
 
-In the output, you'll find options to open the app in a
+## ✨ Funcionalidades (MVP)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+*   Controle de despesas e receitas
+*   Criação e acompanhamento de orçamentos
+*   Visualização de relatórios e gráficos
+*   Acesso seguro e remoto
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🚀 Como Executar o Projeto
 
-## Get a fresh project
+Este projeto foi desenvolvido com React Native e Expo. Para executá-lo em seu ambiente de desenvolvimento, siga os passos abaixo:
 
-When you're ready, run:
+1.  **Instale as dependências:**
+    ```bash
+    npm install
+    ```
 
-```bash
-npm run reset-project
-```
+2.  **Inicie o servidor de desenvolvimento:**
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+    *   **Para iniciar o Metro Bundler (geral):**
+        ```bash
+        npm start
+        ```
+    *   **Para iniciar no Android:**
+        ```bash
+        npm run android
+        ```
+    *   **Para iniciar no iOS:**
+        ```bash
+        npm run ios
+        ```
+    *   **Para iniciar na Web:**
+        ```bash
+        npm run web
+        ```
 
-## Learn more
+## 🛠️ Tecnologias Utilizadas
 
-To learn more about developing your project with Expo, look at the following resources:
+*   [React Native](https://reactnative.dev/)
+*   [Expo](https://expo.dev/)
+*   [TypeScript](https://www.typescriptlang.org/)
+*   [Expo Router](https://expo.github.io/router/) para navegação
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+---
 
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Desenvolvido com ❤️ para uma melhor saúde financeira.
