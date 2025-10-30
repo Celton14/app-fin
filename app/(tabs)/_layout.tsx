@@ -45,7 +45,7 @@ export default function TabsLayout() {
 
       {/* Transactions */}
       <Tabs.Screen
-        name="Transactions"
+        name="History"
         options={{
           title: "Transações",
           tabBarIcon: ({ color, size }) => (
