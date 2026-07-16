@@ -1,50 +1,73 @@
-# Welcome to your Expo app 👋
+Aplicativo mobile para controle financeiro pessoal — feito com React Native + Expo + TypeScript.
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+📋 O que é
+O App‑fin é um app que permite ao usuário registrar entradas e saídas financeiras, acompanhar o saldo em tempo real, organizar transações e manter um perfil personalizado. O app utiliza SQLite local para armazenamento de dados, garantindo persistência offline e funcionamento independente da internet. Funcionalidades que envolvam servidor ou sincronização podem ser implementadas futuramente como backend remoto.
 
-## Get started
+✨ Funcionalidades principais
+Autenticação de usuário (cadastro/login)
+Registro de transações financeiras (entradas e saídas)
+Visualização de lista de transações
+Cálculo automático de saldo — total de entradas, saídas e saldo atual
+Tela inicial com resumo financeiro
+Tela de perfil de usuário com possibilidade de edição
+Navegação por abas inferiores (tabs)
+Armazenamento local das informações usando SQLite — dados persistem no dispositivo
+🛠️ Tecnologias e ferramentas usadas
+React Native + Expo
+TypeScript
+React Navigation
+SQLite (via expo-sqlite) para armazenamento local
+Context API para gerenciamento global de estado / autenticação
+Estrutura organizada de pastas: componentes, telas, database, contexts, assets, etc.
+📂 Estrutura do Projeto
+App‑fin/
+├── assets/          ← imagens, ícones, logos, etc  
+├── src/             ← código‑fonte principal  
+│   ├── screens/     ← telas do app  
+│   ├── components/  ← componentes reutilizáveis  
+│   ├── database/    ← configuração e lógica do SQLite  
+│   ├── contexts/    ← contexto de autenticação / estado global  
+│   ├── utils/       ← funções utilitárias/helpers  
+│   └── styles/      ← estilos globais/comuns  
+├── App.tsx          ← ponto de entrada do app  
+├── index.ts         ← bootstrap / inicialização  
+├── package.json     ← dependências e scripts  
+└── tsconfig.json    ← configurações do TypeScript
+🚀 Como rodar o projeto (desenvolvimento local)
+Clone o repositório
 
-1. Install dependencies
+git clone https://github.com/SeuUsuario/App‑fin.git
+Acesse a pasta do projeto
 
-   ```bash
-   npm install
-   ```
+cd App‑fin
+Instale as dependências
 
-2. Start the app
+npm install
+# ou
+yarn
+Inicie o app com Expo
 
-   ```bash
-   npx expo start
-   ```
+npx expo start
+# ou
+expo start
+Abra no emulador ou dispositivo físico via Expo Go
 
-In the output, you'll find options to open the app in a
+🧪 Banco de Dados Local (SQLite)
+O app utiliza SQLite local para armazenar dados do usuário e transações, garantindo persistência offline. Ele permite:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Funcionamento offline
+Persistência de dados entre sessões
+Simplicidade de setup — sem necessidade de servidor externo
+As tabelas criadas incluem: users (dados de autenticação / perfil) e transactions (dados de cada movimentação financeira).
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+✅ Status do Projeto
+Em desenvolvimento ativo
+Funcionalidades básicas de controle financeiro implementadas
+Possível evolução: melhorias no design, validações extras, sincronização via backend remoto, novas funcionalidades
+🧑‍💻 Equipe do Projeto
+Breno Felipe – @Breninf
+Celton Roberto – @Celton14
+Raryane Oliveira – @yraryy
+Victor Morais – @victormorais314-ofc
+📄 Licença
+Projeto de uso educacional.
